@@ -1,0 +1,87 @@
+body {
+    
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease; /* transition deixa a mudança de cor mais suave */
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+hr{
+    width: 300px;
+    border: none;
+    border-top: 1px solid #ccc;
+    transition: border-color 0.3s ease; /* transition deixa a mudança de cor mais suave */
+}
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;   
+    background-color: #030303;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* transition deixa a mudança de cor mais suave */
+}
+    #titulo { 
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+a {
+    color: #030303;
+    display: block; /* display block serve para que o link ocupe toda a largura da tela, fazendo com que o link fique "grande" e fácil de clicar, alem de deixar ele mais bonito, nao totalmente junto */
+    padding: 15px; /*padding serve para "preencher" um espaço entre itens, dando um espaço entre links, parecido com margin*/
+    margin: 10px 0; /* margin serve para dar espaço entre os links */
+    border-radius: 5px; /* border-radius serve para arredondar os cantos do link */
+    
+}
+.link {
+    background-color: rgb(210, 207, 207); 
+    display: block;
+    width: 300px;
+    height: auto;
+    padding: 12px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* transition deixa a mudança de cor mais suave */
+    text-decoration: none; /* text-decoration serve para tirar o sublinhado do link */
+}
+.link:hover {
+    background-color: rgb(98, 98, 98); 
+    transform: scale(1.05); /* transform é pra dar uma animação ao link quando ele é clicado, faz com que ele mude de tamanho de forma suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* box-shadow é pra dar uma sombra ao link quando ele é clicado, fazendo com que ele fique "flutuando" */
+}
+.dark {
+    background-color: #121212;
+}
+
+.dark #titulo,
+.dark #Paragrafo {
+    color: white;
+}
+
+.dark .link {
+    background-color: #3b3b3b;
+    color: white;
+    border: 1px solid #3b3b3b;
+}
+.dark a {
+    color: white;
+}
+#titulo,
+#Paragrafo {
+    transition: color 0.3s ease; /* transition deixa a mudança de cor mais suave */
+}
